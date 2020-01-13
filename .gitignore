@@ -1,0 +1,4 @@
+.DS_Store
+/cucumber-json/*
+node_modules
+.idea/*
