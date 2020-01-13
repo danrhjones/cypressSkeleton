@@ -1,4 +1,7 @@
 .DS_Store
 /cucumber-json/*
+cucumber_report.html
+cucumber_report.html.json
 node_modules
 .idea/*
+cypress.json
