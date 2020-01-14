@@ -4,7 +4,6 @@ cucumber_report.html
 cucumber_report.html.json
 node_modules
 .idea/*
-cypress.json
-screenshots/*
-videos/*
+screenshots/
 *.env.json
+videos/*
