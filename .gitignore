@@ -5,3 +5,6 @@ cucumber_report.html.json
 node_modules
 .idea/*
 cypress.json
+screenshots/*
+videos/*
+*.env.json

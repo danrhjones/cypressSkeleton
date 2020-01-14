@@ -5,7 +5,7 @@ import SignInPage from "../../../elements/pages/SignInPage";
 
 Given( "I have saved a post", () => {
   const signIn = new SignInPage();
-  signIn.login("dan", "moZR&BsI^v6)ykgM4UguDMvA");
+  signIn.login();
 
   // cy.get('.page-title-action').click()
   // cy.disableTipsIfVisible()

@@ -22,12 +22,10 @@ class SignInPage {
     button.click();
   }
 
-  login(name, password) {
-    cy.log(name);
-    cy.log(password);
+  login() {
     this.visit();
-    this.fillName(name);
-    this.fillPassword(password);
+    this.fillName(Cypress.env('user'));
+    this.fillPassword(Cypress.env('password'));
     this.submit()
   }
 }
