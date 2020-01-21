@@ -29,11 +29,11 @@ Copy the file and rename it to `cypress.env.json`
 
 a html report is generated, called `cucumber_report.hmtml`, and placed in the root of the project
 
-## ESLint
+## ESLint & Gherkin lint
 
 There is a pre-commit hook configured when using git on the command line. 
 
-The hook runs ESLint for all uncommited files
+The hook runs ESLint and gherkin lint for all uncommitted files
 
 This will not work if Intellij's built in VCS tool is used. 
 
