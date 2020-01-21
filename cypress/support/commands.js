@@ -26,8 +26,8 @@
 
 Cypress.Commands.add(("disableTipsIfVisible"), () => {
   if (cy.get('.components-popover__content').should('not.be.visible')) {
-    cy.get('.nux-dot-tip__disable').click()
+    cy.get('.nux-dot-tip__disable').click();
   } else {
-    cy.log("nothing to click")
+    cy.log("nothing to click");
   }
 });

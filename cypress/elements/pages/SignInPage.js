@@ -1,32 +1,32 @@
 class SignInPage {
-  visit() {
+  static visit() {
     cy.log(Cypress.config().baseUrl);
     cy.visit("wp-admin/edit.php");
   }
 
-  fillName(value) {
+  static fillName(value) {
     const field = cy.get('#user_login');
     field.type(value);
 
     return this;
   }
 
-  fillPassword(value) {
-    const field =  cy.get('#user_pass');
+  static fillPassword(value) {
+    const field = cy.get('#user_pass');
     field.type(value);
     return this;
   }
 
-  submit() {
+  static submit() {
     const button = cy.get('#wp-submit');
     button.click();
   }
 
-  login() {
+  static login() {
     this.visit();
     this.fillName(Cypress.env('user'));
     this.fillPassword(Cypress.env('password'));
-    this.submit()
+    this.submit();
   }
 }
 

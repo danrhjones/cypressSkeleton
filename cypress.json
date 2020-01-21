@@ -1,4 +1,4 @@
 {
   "testFiles": "**/*.{feature,features}",
-  "baseUrl": ""
+  "baseUrl": "https://ncurevisions.wpengine.com/"
 }

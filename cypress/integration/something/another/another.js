@@ -1,16 +1,10 @@
-import {Given, Before, Then, When} from "cypress-cucumber-preprocessor/steps";
-import SignInPage from "../../../elements/pages/SignInPage";
-
-
+import { Then, When } from "cypress-cucumber-preprocessor/steps";
 
 
 When(/^I attempt to view the revisions$/, () => {
-  //Todo open the revisions bit
-  // cy.get()
-
-//  check it opened
+  // Todo open the revisions bit
 });
 
 Then(/^I see that there is no content to process$/, () => {
-//todo
+// todo
 });
