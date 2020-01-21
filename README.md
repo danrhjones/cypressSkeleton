@@ -37,3 +37,9 @@ The hook runs ESLint for all uncommited files
 
 This will not work if Intellij's built in VCS tool is used. 
 
+
+## Local debugging
+
+To run the Cypress runner locally, for debugging:
+
+`npm run cypress`

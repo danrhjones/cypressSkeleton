@@ -1,14 +1,15 @@
 {
-  "name": "cypress_framework_skeleton",
+  "name": "cypress-framework-example",
   "version": "1.0.0",
   "description": "An example for Cypress and Cucumber usage",
   "main": "index.js",
   "scripts": {
+    "cypress": "./node_modules/.bin/cypress open",
     "report": "node index.js",
     "test": "cypress run --spec '**/*.feature'; npm run report"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dan Jones",
   "license": "ISC",
   "dependencies": {
     "cucumber-html-reporter": "^5.0.2",
