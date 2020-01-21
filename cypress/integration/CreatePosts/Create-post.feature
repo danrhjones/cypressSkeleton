@@ -7,4 +7,3 @@ Feature: Launch Versions
     Given I have saved a post
     When I attempt to view the revisions
     Then I see that there is no content to process
-

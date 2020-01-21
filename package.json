@@ -6,7 +6,8 @@
   "scripts": {
     "cypress": "./node_modules/.bin/cypress open",
     "report": "node index.js",
-    "test": "cypress run --spec '**/*.feature'; npm run report"
+    "test": "cypress run --spec '**/*.feature'; npm run report",
+    "gherkin-lint": "./node_modules/.bin/gherkin-lint -c .gherkin-lintrc ./cypress/integration"
   },
   "keywords": [],
   "author": "Dan Jones",
@@ -15,7 +16,8 @@
     "cucumber-html-reporter": "^5.0.2",
     "cypress": "^3.7.0",
     "cypress-cucumber-preprocessor": "1.18.0",
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "gherkin-lint": "^3.3.10"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -37,6 +39,7 @@
   },
   "lint-staged": {
     "*.js": [
+      "gherkin-lint",
       "eslint",
       "eslint --fix",
       "git add"
@@ -44,7 +47,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+
+      "pre-commit": "lint-staged && npm run gherkin-lint"
     }
   }
 }
