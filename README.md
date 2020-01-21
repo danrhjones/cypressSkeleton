@@ -35,8 +35,7 @@ There is a pre-commit hook configured when using git on the command line.
 
 The hook runs ESLint and gherkin lint for all uncommitted files
 
-This will not work if Intellij's built in VCS tool is used. 
-
+Make sure that `Run git hooks` is turned on in the Commit changes dialogue box if you use Intellij
 
 ## Local debugging
 
