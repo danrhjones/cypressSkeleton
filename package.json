@@ -1,7 +1,7 @@
 {
   "name": "cypress_framework_skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "An example for Cypress and Cucumber usage",
   "main": "index.js",
   "scripts": {
     "report": "node index.js",
@@ -21,7 +21,10 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-prettier": "^3.1.2"
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.0.10",
+    "lint-staged": "^10.0.1",
+    "prettier": "1.19.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
@@ -29,6 +32,18 @@
       "generate": true,
       "outputFolder": "cucumber-json",
       "filePrefix": "cucumber-"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   }
 }

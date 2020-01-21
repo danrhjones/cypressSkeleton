@@ -13,9 +13,12 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-import './commands';
+import "./commands";
 
-Cypress.on('uncaught:exception', (err, runnable) =>
-  // returning false here prevents Cypress from
-  // failing the test
-  false);
+Cypress.on(
+  "uncaught:exception",
+  (err, runnable) =>
+    // returning false here prevents Cypress from
+    // failing the test
+    false,
+);
