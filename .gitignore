@@ -6,4 +6,5 @@ node_modules
 .idea/*
 screenshots/
 *.env.json
-videos/*
+cypress/videos/*
+*.iml
