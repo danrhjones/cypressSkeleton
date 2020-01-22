@@ -27,7 +27,7 @@ Copy the file and rename it to `cypress.env.json`
 
 - `npm test`
 
-a html report is generated, called `cucumber_report.hmtml`, and placed in the root of the project
+a html report is generated, called `cucumber_report.html`, and placed in the root of the project
 
 ## ESLint & Gherkin lint
 
