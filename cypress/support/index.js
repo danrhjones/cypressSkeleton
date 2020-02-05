@@ -14,6 +14,7 @@
 // ***********************************************************
 
 import "./commands";
+import "./command-helpers";
 
 Cypress.on(
   "uncaught:exception",
